@@ -1,0 +1,156 @@
+!==========
+! Urxvt
+!==========
+
+URxvt.perl-lib:         /home/cofi/.urxvt/
+URxvt.perl-ext:         option-popup,matcher,selection,mark-yank-urls
+URxvt.urlLauncher:      /usr/bin/firefox
+URxvt.underlineURLs:    true
+URxvt.keysym.M-u:       perl:mark-yank-urls:activate_mark_mode
+
+URxvt.cutchars:         `"()'*<>[]{|}"
+ 
+URxvt.borderLess:       false
+URxvt.inheritPixmap: true
+URxvt.tintColor: #C9C9C9
+URxvt.shading:80
+URxvt.depth:            32
+
+URxvt.saveLines:        10000
+URxvt.xftAntialias:     true
+URxvt.font: xft:Monospace:size=10
+URxvt.boldFont: xft:Monospace:bold:size=10
+#Urxvt.font: xft:System San Francisco Default:size=10
+#URxvt.boldFont: xft:System San Francisco Default:size=10
+
+URxvt.italicFont:       xft:inconsolata:pixelsize=13:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=13:antialias=true,hinting=true
+URxvt.bolditalicFont:   xft:inconsolata:pixelsize=13:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=13:antialias=true,hinting=true
+
+URxvt.internalBorder:   0
+URxvt.underlineColor:	#999999
+URxvt.cursorBlink:      true
+URxvt.cursorColor:      #C9C9C9
+
+URxvt.scrollBar:        false
+URxvt.scrollBar_right:  false
+ 
+URxvt.scrollTtyOutput:  false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyKeypress: true
+URxvt.urgentOnBell: true
+
+! special
+URxvt*.foreground:   #93a1a1
+URxvt*.background:   #002b36
+URxvt*.cursorColor:  #93a1a1
+
+! black
+URxvt*.color0:       #002b36
+URxvt*.color8:       #657b83
+
+! red
+URxvt*.color1:       #dc322f
+URxvt*.color9:       #dc322f
+
+! green
+URxvt*.color2:       #859900
+URxvt*.color10:      #859900
+
+! yellow
+URxvt*.color3:       #b58900
+URxvt*.color11:      #b58900
+
+! blue
+URxvt*.color4:       #268bd2
+URxvt*.color12:      #268bd2
+
+! magenta
+URxvt*.color5:       #6c71c4
+URxvt*.color13:      #6c71c4
+
+! cyan
+URxvt*.color6:       #2aa198
+URxvt*.color14:      #2aa198
+
+! white
+URxvt*.color7:       #93a1a1
+URxvt*.color15:      #fdf6e3
+
+URxvt*xftAutoHint: true
+
+#include ".Xresources.hidpi"
+#include ".Xresources.gloom"
+
+! Make Man pages colored
+*VT100.colorBDMode:     true
+*VT100.colorBD:         red
+*VT100.colorULMode:     true
+*VT100.colorUL:         cyan
+*VT100.veryBoldColors:  6
+
+! Native transparency
+URxvt.transparent: false
+URxvt.shading: 15
+
+! Set the icon
+URxvt.iconFile: /usr/share/icons/gnome/256x256/apps/terminal.png
+
+! Adjust the scrollbar
+URxvt.scrollBar: false
+
+! Adjust the geometry
+URxvt.geometry: 90x37
+
+! Keep borders
+URxvt.borderLess: false
+
+! Font and letter spacing
+URxvt.letterSpace: 0
+
+! Perl extensions
+URxvt.perl-ext-common: default
+
+URxvt.keysym.Control-Up:    \033[1;5A
+URxvt.keysym.Control-Down:  \033[1;5B
+URxvt.keysym.Control-Left:  \033[1;5D
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-v:     \026
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: argb:ff292a44, #002b36, #000000
+rofi.color-normal: argb:00B2C7D2, argb:ff678bdc, argb:00B2C7D2, argb:00ffffff, argb:ff2de0a7
+rofi.color-active: #2de0a7, #ffffff, #2de0a7, #2de0a7, #2de0a7
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3
+
+rofi.fake-transparency: true
+rofi.columns: 3
+rofi.separator-style: none
+rofi.hide-scrollbar: true
+rofi.location: 0
+rofi.padding: 300
+rofi.fullscreen: true
+rofi.width: 1920
+rofi.lines: 20
+!#################
+!	XTerm
+!#################
+
+XTerm.vt100.saveLines: 4096
+XTerm.vt100.scrollBar: false
+
+Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+XTerm.vt100.faceName: Liberation Mono:size=10:antialias=false
+XTerm.vt100.font: 7x13
+
+! disable bold font faces, instead make text light blue.
+XTerm.vt100.colorBDMode: true
+XTerm.vt100.colorBD: rgb:82/a4/d3
+! disable underlined text, instead make it white.
+XTerm.vt100.colorULMode: true
+XTerm.vt100.colorUL: rgb:e4/e4/e4
+! similarly use colorIT for italics
